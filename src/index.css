@@ -11,3 +11,123 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'inherit';
+  src: url(../public/font/Inheritance.ttf);
+}
+body,html{
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: url(../public/img/nice_city.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  
+}
+body::before{
+  content: "";
+  background-color: rgb(0, 0, 0,0.9);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+header .logo {
+  font-family: "inherit",sans-serif !important;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b00020;
+ 
+  display: flex;
+  align-items: center;
+}
+.logo:hover{
+  color: #b00020;
+}
+.header__content .header__item{
+  margin: auto;
+}
+.header__item1 input{
+  background: #fff url(../public/img/search.png) no-repeat 10px center;
+      border: 1px solid #eee;
+      padding: 0 10px;
+      width: 35px;
+      height: 35px;
+      border-radius: 10em;
+      cursor: pointer;
+      transition: 0.5s;
+      outline: none;
+}
+.header__item1 input:focus{
+  width: 200px;
+      padding-left: 32px;
+      color: #000;
+      padding-right: 15px;
+      cursor: auto;
+      background-color: #fff;
+}
+.header__item1 a img{
+  width: 35px;
+  height: 35px;
+}
+#navbarSupportedContent .header__item .nav-item .nav-link{
+  padding: 0.5rem 1.25rem;
+  color: #fff;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
+.my_active{
+  background-color: rgba(220, 38, 38,1);
+  border-radius: 1rem;
+}
+.fixed-top { 
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  width: 100%;
+  height: 82px;
+  z-index: 10;
+  background-color: rgb(0, 0, 0,0.6);
+}
+
+.movieCarousel{
+  height: 100vh;
+}
+.movieCarousel .carousel-indicators li{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.movieCarousel .carousel-caption{
+  text-align: start;
+  left: 15px;
+} 
+
+
+
+
+
+
+
+
+@media (min-width:1200px) {
+  body .container{
+      max-width: 1200px !important;
+  }
+}
+
+@media (max-width:992px){
+  header .navbar-toggler span{
+    color: #b00020;
+    font-size: 2rem;
+  }
+}
