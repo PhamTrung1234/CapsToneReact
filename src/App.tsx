@@ -1,14 +1,13 @@
-import {BrowserRouter, Route,Routes} from "react-router-dom"
+import {BrowserRouter ,Routes} from "react-router-dom"
 import './App.css';
-import HomePage from "./booksmoviewebsite/HomePages";
-import AdminPages from "./booksmoviewebsite/AdminPage";
 
+import {renderRoute} from "./Root"
 function App() {
   return (
     <BrowserRouter>
     <Routes>
-       <Route path="" element={<HomePage/>}/>
-       <Route path="admin" element={<AdminPages/>}/>
+       
+       {renderRoute()}
     </Routes>
      
     </BrowserRouter>

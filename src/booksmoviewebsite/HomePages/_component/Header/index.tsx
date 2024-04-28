@@ -1,5 +1,5 @@
 import {NavLink} from "react-router-dom"
-
+import { renderNavBar } from "../../../../Root";
 export default function Header() {
     const fixedHeader =     window.addEventListener('scroll', function() {
         let navbar = document.querySelector('header');
@@ -36,26 +36,7 @@ export default function Header() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto header__item">
-            <li className="nav-item ">
-              <NavLink className={({isActive})=>(isActive ? "nav-link my_active":"nav-link")} to="/">
-                Trang chủ
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className={({isActive})=>(isActive ? "nav-link my_active":"nav-link")} to="/phim">
-                Phim 
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className={({isActive})=>(isActive ? "nav-link my_active":"nav-link")} to="/rap">
-                Rạp Chiếu
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className={({isActive})=>(isActive ? "nav-link my_active":"nav-link")} to="/thanhvien">
-                Thành Viên
-              </NavLink>
-            </li>
+            {renderNavBar()}
           </ul>
           <div className="header__item1 mr-sm-2">
             <form>

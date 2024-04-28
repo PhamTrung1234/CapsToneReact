@@ -1,7 +1,7 @@
 import Carousel from "./_component/Carousel";
 import Header from "./_component/Header";
 import { useEffect } from "react";
-
+import {Outlet} from "react-router-dom"
 export default function HomePage() {
  useEffect(()=>{
   window.addEventListener('scroll', function() {
@@ -18,7 +18,8 @@ export default function HomePage() {
     <div>
       
       <Header/>
-      <Carousel/>
+      {/* <Carousel/> */}
+      <Outlet/>
     </div>
   )
 }
