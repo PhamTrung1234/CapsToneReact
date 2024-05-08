@@ -7,6 +7,8 @@ import RapChieu from "../booksmoviewebsite/HomePages/RapChieu"
 import ThanhVien from "../booksmoviewebsite/HomePages/ThanhVien"
 
 import { NavLink } from "react-router-dom"
+import Login from "../booksmoviewebsite/AuthenPages/Login"
+import Singin from "../booksmoviewebsite/AuthenPages/Singin"
 
 
 
@@ -34,7 +36,9 @@ const route : Route1[]= [
          {path:"rap",element:RapChieu},
          {path:"thanhvien",element:ThanhVien}
      ]},
-     {path:"admin",element:AdminPages}
+     {path:"admin",element:AdminPages},
+     {path:"login",element:Login},
+     {path:"singin",element:Singin}
 ]
 
 
